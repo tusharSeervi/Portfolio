@@ -1,85 +1,100 @@
-import { CTA } from "../components";
-
-const certifications = [
-  {
-    title: "Full-Stack Software Engineering Bootcamp",
-    issuer: "Coding Ninjas",
-    details: "Frontend, Backend, DBMS, DSA, Aptitude, GenAI",
-    link: "https://your-link-here",
-  },
+const certificates = [
   {
     title: "Data Science Internship Certificate",
-    issuer: "DATALAY",
-    details: "SQL, Excel, Power BI Dashboards",
-    link: "https://your-link-here",
+    link: "https://drive.google.com/file/d/1iVyIx8VCWvQaUGWNT-1f44QEsnz9FzOP/view",
   },
   {
-    title: "Data Analytics & Visualization",
-    issuer: "Kaggle × Google",
-    details: "Data analysis and visualization fundamentals",
-    link: "https://your-link-here",
+    title: "Google skills Certifications",
+    link: "https://www.skills.google/public_profiles/ad46a560-beaf-4586-83cf-62c14423c224",
   },
   {
-    title: "Cloud & Enterprise Foundations",
-    issuer: "Oracle | EY × Microsoft",
-    details: "Cloud fundamentals and enterprise tools",
-    link: "https://your-link-here",
+    title: "Oracle Genrative AI Certificate",
+    link: "https://drive.google.com/file/d/1KImKPmMjw8Q9X3XYHEfsUKBeId4aYpJJ/view?usp=sharing",
+  },{
+    title: "Kaggle x Google",
+    link: "https://drive.google.com/file/d/1yr_n3YOL_kdL9Akz-rEOfwrCNZlrW9r8/view?usp=sharing",
   },
   {
-    title: "Virtual Work Experience Programs",
-    issuer: "Forage (AWS, Tata, Deloitte)",
-    details: "Industry-simulated tasks and workflows",
-    link: "https://your-link-here",
+    title: "EY Microsoft",
+    link: "https://drive.google.com/file/d/1v7V4zY350ciX6yKdyN3DmDZRSZzQyrzB/view?usp=sharing",
+  },
+  {
+    title: "Forage x AWS",
+    link: "https://drive.google.com/file/d/1XCmFK8Y5WOLoK-UVTkT8bR3zqySj7VwJ/view?usp=sharing",
+  },
+  {
+    title: "Forage x Deloitte",
+    link: "https://drive.google.com/file/d/1IPisUXV1JBUCVbTFK2ctYbopadqCoahg/view?usp=sharing",
+  },{
+    title: "Forage x TATA",
+    link: "https://drive.google.com/file/d/1gD8htqH8q2AtNbm2MFlpJZtKwOckwmFe/view?usp=sharing",
+  },
+  {
+    title: "OUTSKILL",
+    link: "https://drive.google.com/file/d/1wjfuhX3VxxMPWchDNpEzBqgJXwlVfI-_/view?usp=sharing",
+  },
+  {
+    title:"Bharat Intern",
+    link:"https://drive.google.com/file/d/1ZVovHrqQ8A9ZxphksGdQr-P5rH1ivPB0/view?usp=sharing",
+  },
+  {
+    title:"Udemy - Business Communication",
+    link:"https://drive.google.com/file/d/13qea5iIDosIDZ3tnANHr_RdVXXWxn2TA/view?usp=sharing",
+  },
+  {
+    title:"Code Clause",
+    link:"https://drive.google.com/file/d/16vk6zVyyadaeobBJqfmgFW5JLlySusKE/view?usp=sharing",
+  },
+  {
+    title:"CodeSoft",
+    link:"https://drive.google.com/file/d/1rgbUnvQYkhSrgydO-Fs6jsHcW2luF1sY/view?usp=sharing",
+  },
+  {
+    title:"Udemy - Intro to cryptocurrency",
+    link:"https://drive.google.com/file/d/1ktOg8j8KFRUfcIeojvoXkpwTfUCM1KRC/view?usp=sharing",
+  },
+  {
+    title:"Oasis Infobyte",
+    link:"https://drive.google.com/file/d/1nltmiDY0kRIMwIcX9satjlaLJ9yHT5Lu/view?usp=sharing",
   },
 ];
 
 const Certifications = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
-        My <span className='blue-gradient_text font-semibold drop-shadow'>Certifications</span>
+    <section className="max-container">
+      <h1 className="head-text">
+        Certifications &{" "}
+        <span className="blue-gradient_text drop-shadow font-semibold">
+          Internship
+        </span>
       </h1>
 
-      <p className='mt-5 text-slate-500 max-w-3xl'>
-        A collection of certifications and training programs that strengthened my foundations
-        across software engineering, data science, and cloud technologies.
-      </p>
-
-      <div className='mt-12 grid grid-cols-1 md:grid-cols-2 gap-8'>
-        {certifications.map((cert, index) => (
-          <div
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {certificates.map((cert, index) => (
+          <a
             key={index}
-            className='bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition'
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white p-10 shadow-sm hover:shadow-md transition-shadow"
           >
-            <h3 className='text-xl font-semibold text-black'>
+            {/* Big icon */}
+            <div className="w-20 h-20 flex items-center justify-center rounded-full border border-slate-300 text-3xl text-slate-600">
+              📄
+            </div>
+
+            {/* Title */}
+            <p className="text-sm font-medium text-slate-800 text-center">
               {cert.title}
-            </h3>
-
-            <p className='mt-1 text-sm text-slate-600 font-medium'>
-              {cert.issuer}
             </p>
 
-            <p className='mt-3 text-sm text-slate-500'>
-              {cert.details}
-            </p>
-
-            {cert.link && (
-              <a
-                href={cert.link}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-block mt-4 text-sm font-medium text-blue-600 hover:underline'
-              >
-                View Certificate →
-              </a>
-            )}
-          </div>
+            {/* Hint */}
+            <span className="text-xs text-slate-500">
+              View Certificate ↗
+            </span>
+          </a>
         ))}
       </div>
-
-      <hr className='border-slate-200 mt-16' />
-
-      <CTA />
     </section>
   );
 };
