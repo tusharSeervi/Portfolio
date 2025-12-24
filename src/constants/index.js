@@ -201,14 +201,14 @@ export const projects = [
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'TWO GOOD CO ',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        description: 'Developed a responsive landing page inspired by the Two Good Co website, focusing on clean UI design, smooth scrolling interactions, and modern frontend fundamentals using HTML, CSS, and JavaScript.',
         link: 'https://two-good-co-teal.vercel.app',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'DALLE-2 Clone',
-        description: 'Developed a responsive landing page inspired by the Two Good Co website, focusing on clean UI design, smooth scrolling interactions, and modern frontend fundamentals using HTML, CSS, and JavaScript.',
+        description: 'Developed a full-stack MERN-based AI image generation application that converts text prompts into high-quality images, featuring a scalable REST API, community image sharing, and a responsive modern UI inspired by MidJourney and DALL·E.',
         link: 'https://dalle-2-0-five.vercel.app/',
     }
 ];
