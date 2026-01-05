@@ -7,7 +7,7 @@ const certificates = [
   },
   {
     title: "CODING NINJAS",
-    description: "Coding Ninjas Full-Stack Development Bootcamp ",
+    description: "Coding Ninjas Full-Stack Development Bootcamp",
     link: "https://drive.google.com/file/d/1CG0fWMcUMESJ6Dv0kUIWsOOhfOQy9HOW/view?usp=sharing",
     image: "../src/assets/certificates/CN.png",
   },
@@ -66,8 +66,8 @@ const certificates = [
     image: "../src/assets/certificates/bharatIntern.png",
   },
   {
-    title: "UDEMY",
-    description: "Master Course In Bussiness Communication",
+    title: "UDEMY – Business Communication",
+    description: "Master Course In Business Communication",
     link: "https://drive.google.com/file/d/13qea5iIDosIDZ3tnANHr_RdVXXWxn2TA/view?usp=sharing",
     image: "../src/assets/certificates/udemy.png",
   },
@@ -84,18 +84,19 @@ const certificates = [
     image: "../src/assets/certificates/codeSoft.png",
   },
   {
-    title: "UDEMY",
+    title: "UDEMY – Cryptocurrency Basics",
     description: "Cryptocurrency and blockchain basics",
     link: "https://drive.google.com/file/d/1ktOg8j8KFRUfcIeojvoXkpwTfUCM1KRC/view?usp=sharing",
     image: "../src/assets/certificates/udemy.png",
   },
   {
-    title: "OASIS INFOBYTES",
+    title: "OASIS INFOBYTE",
     description: "Virtual Internship In Web Development and Designing",
     link: "https://drive.google.com/file/d/1nltmiDY0kRIMwIcX9satjlaLJ9yHT5Lu/view?usp=sharing",
     image: "../src/assets/certificates/oasis.png",
   },
 ];
+
 
 const Certifications = () => {
   return (
@@ -117,7 +118,7 @@ const Certifications = () => {
             className="group flex flex-col items-center gap-4 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm hover:shadow-md transition"
           >
             {/* Small image */}
-            <div className="w-23 h-25  rounded-full overflow-hidden border border-slate-300 bg-slate-50 flex items-center justify-center">
+            <div className="w-22 h-22  rounded-full overflow-hidden border border-slate-300 bg-slate-50 flex items-center justify-center">
               <img
                 src={cert.image}
                 alt={cert.title}
