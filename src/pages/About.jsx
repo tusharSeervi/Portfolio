@@ -10,38 +10,41 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
+    <section className="max-container">
+      <h1 className="head-text">
         Hello, I'm{" "}
-        <span className='blue-gradient_text font-semibold drop-shadow'>
+        <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
           Tushar
         </span>{" "}
         👋
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-  I'm a passionate <span className='blue-gradient_text font-semibold drop-shadow'>Full-Stack Developer</span> from India, 
-  focused on building scalable and user-friendly web applications. 
-  I love learning new technologies, solving real-world problems, and continuously improving my craft 
-  through hands-on projects and practical experience.
-</p>
-
+          I'm a passionate{" "}
+          <span className="blue-gradient_text font-semibold drop-shadow">
+            Full-Stack Developer
+          </span>{" "}
+          from India, focused on building scalable, maintainable, and
+          user-centric web applications. I work with modern technologies to
+          solve real-world problems and continuously improve code quality,
+          performance, and system design through hands-on projects.
+        </p>
       </div>
 
-      <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+      <div className="py-10 flex flex-col">
+        <h3 className="subhead-text">My Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+            <div className="block-container w-20 h-20" key={skill.name}>
+              <div className="btn-back rounded-xl" />
+              <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className="w-1/2 h-1/2 object-contain"
                 />
               </div>
             </div>
@@ -49,30 +52,32 @@ const About = () => {
         </div>
       </div>
 
-      <div className='py-16'>
-        <h3 className='subhead-text'>My Journey</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className="py-16">
+        <h3 className="subhead-text">My Journey</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-  My journey has been all about learning, building, and growing — from my academic foundation 
-  to developing real-world projects that shaped my skills as a full-stack developer. 
-  Here's how it all began:
-</p>
-
+            My journey has been shaped by continuous learning and hands-on
+            experience, progressing from a strong academic foundation to
+            building real-world projects. Here’s how it began.
+          </p>
         </div>
 
-        <div className='mt-12 flex'>
+        <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
+                iconStyle={{
+                  background: experience.iconBg,
+                  border: `3px solid ${experience.iconBg}`,
+                }}
                 icon={
-                  <div className='flex justify-center items-center w-full h-full'>
+                  <div className="w-full h-full rounded-full overflow-hidden">
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 }
@@ -84,22 +89,22 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                  <h3 className="text-black text-xl font-poppins font-semibold">
                     {experience.title}
                   </h3>
                   <p
-                    className='text-black-500 font-medium text-base'
+                    className="text-black-500 font-medium text-base"
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
                   </p>
                 </div>
 
-                <ul className='my-5 list-disc ml-5 space-y-2'>
+                <ul className="my-5 list-disc ml-5 space-y-2">
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
+                      className="text-black-500/50 font-normal pl-1 text-sm"
                     >
                       {point}
                     </li>
@@ -111,7 +116,7 @@ const About = () => {
         </div>
       </div>
 
-      <hr className='border-slate-200' />
+      <hr className="border-slate-200" />
 
       <CTA />
     </section>

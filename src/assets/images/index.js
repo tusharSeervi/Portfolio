@@ -8,6 +8,9 @@ import secondary from './10th.png'
 import seniorSecondary from './12th.png'
 import graduation from './graduation.png'
 import cn from './cn.png'
+import schooling from './schooling.png'
+import university from './university.png'
+import dataplay from './dataplay.png'
 
 export {
     hero,
@@ -19,5 +22,8 @@ export {
     secondary,
     seniorSecondary,
     graduation,
-    cn
+    cn,
+    schooling,
+    university,
+    dataplay,
 }

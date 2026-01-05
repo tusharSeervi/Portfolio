@@ -33,7 +33,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Exploring tech through hands-on projects. <br /> Curious to see the impact?
+          Exploring tech through hands-on projects, <br /> Curious to see the impact?
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>

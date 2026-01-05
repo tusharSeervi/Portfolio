@@ -15,11 +15,10 @@ const Projects = () => {
       </h1>
 
       <p className="text-slate-500 mt-2 leading-relaxed">
-        I’ve built several projects while learning full-stack web development,
-        focusing on technologies like React, Node.js, Express, and MongoDB. Each
-        project has helped me grow as a developer and strengthen my
-        problem-solving skills. I’m constantly improving and exploring new ways
-        to build better, faster, and more creative applications.
+        These projects showcase my hands-on experience in building full-stack
+         web applications with a focus on scalable architecture, efficient data handling,
+          and real-world functionality. Each project reflects my ability to design, implement,
+           and refine complete solutions using modern development practices.
       </p>
 
       <div className="flex flex-wrap my-20 gap-16">

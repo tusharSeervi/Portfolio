@@ -107,6 +107,10 @@ const Certifications = () => {
           Internship
         </span>
       </h1>
+      <p className="mt-4 text-slate-500 max-w-3xl">
+  A curated set of certifications reflecting hands-on experience
+  across full-stack development, cloud, AI, and modern engineering practices.
+</p>
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((cert, index) => (
