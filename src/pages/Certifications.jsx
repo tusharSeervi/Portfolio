@@ -2,7 +2,7 @@ const certificates = [
   {
     title: "DATAPLAY",
     description: "Data Science Internship Training",
-    link: "https://drive.google.com/file/d/1iVyIx8VCWvQaUGWNT-1f44QEsnz9FzOP/view",
+    link: "https://drive.google.com/file/d/1iVyIx8VCWvQaUGWNT-1f44QEsnz9FzOP/view?usp=sharing",
     image: "/certificates/dataplay.png",
   },
   {
