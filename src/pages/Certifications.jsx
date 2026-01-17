@@ -113,7 +113,7 @@ const Certifications = () => {
   A curated set of certifications reflecting hands-on experience
   across full-stack development, cloud, AI, and modern engineering practices.
 </p>
-
+<div className="py-8">
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((cert, index) => (
           <a
@@ -149,6 +149,8 @@ const Certifications = () => {
           </a>
         ))}
       </div>
+</div>
+
       <hr className="border-slate-200" />
 
       <CTA />
