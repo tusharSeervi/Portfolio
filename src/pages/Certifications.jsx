@@ -1,3 +1,5 @@
+import { CTA } from "../components";
+
 const certificates = [
   {
     title: "DATAPLAY",
