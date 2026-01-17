@@ -147,6 +147,8 @@ const Certifications = () => {
           </a>
         ))}
       </div>
+
+      <CTA />
     </section>
   );
 };
